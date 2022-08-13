@@ -39,12 +39,12 @@ with col2:
 
 col1,col2 = st.columns(2)
 with col1:
-    plon = st.number_input('Pickup longitude',-73.965355)
-    dlong = st.number_input('Dropoff longitude',-73.778137)
+    plon = st.number_input('Pickup longitude',value=-73.965355)
+    dlong = st.number_input('Dropoff longitude',value=-73.778137)
 
 with col2:
-    plat = st.number_input('Pickup latitude',40.782864)
-    dlat = st.number_input('Dropoff latitude',40.641312)
+    plat = st.number_input('Pickup latitude',value=40.782864)
+    dlat = st.number_input('Dropoff latitude',value=40.641312)
 
 p = st.slider('Person', 1, 10, 1)
 
